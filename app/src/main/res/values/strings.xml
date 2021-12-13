@@ -1,0 +1,47 @@
+<resources>
+
+    <string name="giochiamo">GIOCHIAMO</string>
+    <string name="impariamo">IMPARIAMO</string>
+    <string name="prima_schermata">Prima schermata</string>
+    <string name="buttonBack">buttonBack</string>
+    <string name="attraversare">attraversare</string>
+    <string name="segnali">segnali</string>
+    <string name="bici">bici</string>
+    <string name="segnalicompleti">segnaliCompleti</string>
+    <string name="semafororosso">semaforoRosso</string>
+    <string name="semaforogiallo">semaforoGiallo</string>
+    <string name="semaforoverde">semaforoVerde</string>
+    <string name="gioco_1">Gioco 1</string>
+    <string name="pepper_il_vigile">Pepper il Vigile</string>
+    <string name="provaimmaginezoom">provaImmagineZoom</string>
+    <string name="buttonHome">buttonHome</string>
+    <string name="buttonStop">buttonStop</string>
+    <string name="buttonNo">ButtonNo</string>
+    <string name="buttonSi">ButtonSi</string>
+    <string name="buttonno">buttonno</string>
+    <string name="buttonmezzi">buttonMezzi</string>
+    <string name="buttonauto">buttonAuto</string>
+    <string name="gioco1">gioco1</string>
+    <string name="gioco2">gioco2</string>
+    <string name="prova">prova</string>
+    <string name="immrossozoom">immRossoZoom</string>
+    <string name="immgiallozoom">immgiallozoom</string>
+    <string name="immverdezoom">immverdezoom</string>
+    <string name="stradainiziale">stradaIniziale</string>
+    <string name="tastoanna">tastoAnna</string>
+    <string name="tastoluca">tastoLuca</string>
+    <string name="puntitext">puntitext</string>
+    <string name="imminiziale">immIniziale</string>
+    <string name="wrong_label" />
+
+    <string name="app_name">HERO</string>
+    <string name="food_image_description">Food Image</string>
+    <string name="date_select">Today </string>
+    <string name="loading_text">Processing results</string>
+    <string name="title_activity_diary">Diary</string>
+    <string name="title_diary">Diary</string>
+    <string name="title_progress">Progress</string>
+    <string name="title_activity_result">Results</string>
+    <string name="open_from_gallery">Open from gallery</string>
+    <string name="SCATTA_FOTO">SCATTA FOTO</string>
+</resources>

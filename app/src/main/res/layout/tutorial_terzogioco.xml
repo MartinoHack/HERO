@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/indovina">
+
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="188dp"
+        android:layout_height="102dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967"
+        app:srcCompat="@drawable/seconda_freccia2" />
+
+    <ImageButton
+        android:id="@+id/camebackButton2"
+        android:layout_width="95dp"
+        android:layout_height="83dp"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Home_button"
+        android:onClick="CameToSelectActivity"
+        android:scaleType="centerInside"
+        android:src="@drawable/home_button"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+
+    <ImageButton
+        android:id="@+id/play2"
+        android:layout_width="106dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="836dp"
+        android:layout_marginTop="500dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="PlayGameActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/play_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
