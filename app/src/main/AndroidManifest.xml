@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.huyng.nutrisnap">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="23" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icona"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icona"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/MainTheme">
+
+
+        <activity
+            android:name="com.example.huyng.nutrisnap.Food.main">
+
+        </activity>
+        <activity
+            android:name="com.example.huyng.nutrisnap.Food.ResultActivity"
+            android:label="@string/title_activity_result"
+            android:theme="@style/ResultTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.huyng.nutrisnap.Food.main" />
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.huyng.nutrisnap.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.example.huyng.nutrisnap.acqua.Acqua" />
+        <activity android:name="com.example.huyng.nutrisnap.acqua.Acqua2" />
+        <activity android:name="com.example.huyng.nutrisnap.fata.Fata_attenzione" />
+        <activity android:name="com.example.huyng.nutrisnap.fata.Domanda1errata" />
+        <activity android:name="com.example.huyng.nutrisnap.fata.Domanda1corretta" />
+        <activity android:name="com.example.huyng.nutrisnap.carboidrati.Carboidrati4" />
+        <activity android:name="com.example.huyng.nutrisnap.carboidrati.Carboidrati3" />
+        <activity android:name="com.example.huyng.nutrisnap.carboidrati.Carboidrati2" />
+        <activity android:name="com.example.huyng.nutrisnap.carboidrati.Carboidrati" />
+        <activity android:name="com.example.huyng.nutrisnap.acqua.Acqua3" />
+        <activity android:name="com.example.huyng.nutrisnap.fata.Fatadomanda1" />
+        <activity android:name="com.example.huyng.nutrisnap.fata.FataStory" />
+        <activity android:name="com.example.huyng.nutrisnap.fata.FataStory2" />
+        <activity android:name="com.example.huyng.nutrisnap.fibre.Fibre" />
+        <activity android:name="com.example.huyng.nutrisnap.fibre.Fibre2" />
+        <activity android:name="com.example.huyng.nutrisnap.grassi.Grassi" />
+        <activity android:name="com.example.huyng.nutrisnap.grassi.Grassi2" />
+        <activity android:name="com.example.huyng.nutrisnap.grassi.Grassi3" />
+        <activity android:name="com.example.huyng.nutrisnap.grezzo.DomandaG1corretta" />
+        <activity android:name="com.example.huyng.nutrisnap.grezzo.DomandaG1errata" />
+        <activity android:name="com.example.huyng.nutrisnap.grezzo.Grezzo_attenzione" />
+        <activity android:name="com.example.huyng.nutrisnap.grezzo.Grezzodomanda1" />
+        <activity android:name="com.example.huyng.nutrisnap.grezzo.GrezzoStory" />
+        <activity android:name="com.example.huyng.nutrisnap.grezzo.GrezzoStory2" />
+        <activity android:name="com.example.huyng.nutrisnap.MainActivity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name="com.example.huyng.nutrisnap.MenuImpariamoGiochiamoActivity" />
+        <activity android:name="com.example.huyng.nutrisnap.MenuSostanze" />
+        <activity android:name="com.example.huyng.nutrisnap.MenuStorie" />
+        <activity android:name="com.example.huyng.nutrisnap.MenuStorieSostanze" />
+        <activity android:name="com.example.huyng.nutrisnap.SostanzeBreve" />
+        <activity android:name="com.example.huyng.nutrisnap.proteine.Proteine" />
+        <activity android:name="com.example.huyng.nutrisnap.proteine.Proteine2" />
+        <activity android:name="com.example.huyng.nutrisnap.proteine.Proteine3" />
+        <activity android:name="com.example.huyng.nutrisnap.Second_game.SecondGame01" />
+        <activity android:name="com.example.huyng.nutrisnap.Second_game.SecondGame02" />
+        <activity android:name="com.example.huyng.nutrisnap.Second_game.SecondGame03" />
+        <activity android:name="com.example.huyng.nutrisnap.Second_game.SecondGame04" />
+        <activity android:name="com.example.huyng.nutrisnap.Second_game.SecondGame05" />
+        <activity android:name="com.example.huyng.nutrisnap.Second_game.SecondGame06" />
+        <activity android:name="com.example.huyng.nutrisnap.Second_game.SecondGame07" />
+        <activity android:name="com.example.huyng.nutrisnap.Second_game.SecondGameResult" />
+        <activity android:name="com.example.huyng.nutrisnap.Second_game.TutorialSecondGame" />
+        <activity android:name="com.example.huyng.nutrisnap.Terzo.Terzo1" />
+        <activity android:name="com.example.huyng.nutrisnap.Terzo.Terzo2" />
+        <activity android:name="com.example.huyng.nutrisnap.Terzo.Terzo3" />
+        <activity android:name="com.example.huyng.nutrisnap.Terzo.Terzo4" />
+        <activity android:name="com.example.huyng.nutrisnap.Terzo.Terzo5" />
+        <activity android:name="com.example.huyng.nutrisnap.Terzo.Terzo6" />
+        <activity android:name="com.example.huyng.nutrisnap.Terzo.Terzo7" />
+        <activity android:name="com.example.huyng.nutrisnap.Terzo.Terzo8" />
+        <activity android:name="com.example.huyng.nutrisnap.Terzo.Terzo9" />
+        <activity android:name="com.example.huyng.nutrisnap.Terzo.Terzo10" />
+        <activity android:name="com.example.huyng.nutrisnap.Terzo.Tutorialterzogioco" />
+        <activity android:name="com.example.huyng.nutrisnap.verdotti.DomandaVcorretta" />
+        <activity android:name="com.example.huyng.nutrisnap.verdotti.DomandaVerrata" />
+        <activity android:name="com.example.huyng.nutrisnap.verdotti.Verdotti_attenzione" />
+        <activity android:name="com.example.huyng.nutrisnap.verdotti.Verdottidomanda1" />
+        <activity android:name="com.example.huyng.nutrisnap.verdotti.VerdottiStory" />
+        <activity android:name="com.example.huyng.nutrisnap.verdotti.VerdottiStory2" />
+        <activity android:name="com.example.huyng.nutrisnap.vitamine.Vitamine" />
+        <activity android:name="com.example.huyng.nutrisnap.vitamine.Vitamine2" />
+        <activity android:name="com.example.huyng.nutrisnap.vitamine.Vitamine3" />
+        <activity android:name="com.example.huyng.nutrisnap.vitamine.Vitamine4" />
+        <activity android:name=".SelectActivity" />
+        <activity android:name=".Food.Corretto" />
+        <activity android:name=".quiz.Quiz1"/>
+        <activity android:name=".quiz.Quiz2"/>
+        <activity android:name=".quiz.Quiz3"/>
+        <activity android:name=".quiz.Quiz4"/>
+        <activity android:name=".quiz.Quiz5"/>
+        <activity android:name=".quiz.Quiz6"/>
+        <activity android:name=".quiz.Quiz7"/>
+        <activity android:name=".quiz.QuizResult"/>
+        <activity android:name=".quiz.TutorialQuiz" />
+        <activity android:name=".Food.primo" />
+        <activity android:name=".Food.SemaforoGiallo" />
+        <activity android:name=".Food.SemaforoVerde" />
+        <activity android:name=".Food.SemaforoRosso" />
+        <activity android:name=".Food.TurnoBambino" />
+        <activity android:name=".Food.BambinoNoncorretto" />
+        <activity android:name=".Food.BambinoCorretto" />
+        <activity android:name=".Food.VerdePepper" />
+        <activity android:name=".Food.GialloPepper" />
+        <activity android:name=".Food.RossoPepper" />
+        <activity android:name=".Food.PepperCorretto" />
+        <activity android:name=".Food.PepperNoncorretto" />
+        <activity android:name=".Food.Turno" />
+        <activity android:name=".Food.Tutorial" />
+        <activity android:name=".Food.Turno2" />
+        <activity android:name=".Food.Turno3" />
+        <activity android:name=".Food.Fine" />
+        <activity android:name=".fata.Domanda2corretta" />
+        <activity android:name=".fata.Domanda2errata" />
+        <activity android:name=".fata.Fatadomanda2" />
+        <activity android:name=".grezzo.Grezzodomanda2" />
+        <activity android:name=".grezzo.DomadnaG2errata" />
+        <activity android:name=".grezzo.DomandaG2corretta" />
+        <activity android:name=".verdotti.DomandaV2corretta" />
+        <activity android:name=".verdotti.DomandaV2errata" />
+        <activity android:name=".verdotti.Verdottidomanda2" />
+        <activity android:name=".PiramideAlimentare" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+
+</manifest>
